@@ -1,13 +1,13 @@
-<div class="container">
+<div>
 	<ul class="nav nav-tabs" style="margin-bottom: 15px;">
-		<li ng-class="{active: $state.includes('goals.all')}"><a ui-sref="goals.all">All</a></li>
-		<li ng-class="{active: $state.includes('goals.physical')}"><a ui-sref="goals.physical">Physical</a></li>
-		<li ng-class="{active: $state.includes('goals.spiritual')}"><a ui-sref="goals.spiritual">Spiritual</a></li>
-		<li ng-class="{active: $state.includes('goals.professional')}"><a ui-sref="goals.professional">Professional</a></li>
-		<li ng-class="{active: $state.includes('goals.financial')}"><a ui-sref="goals.financial">Financial</a></li>
-		<li ng-class="{active: $state.includes('goals.other')}"><a ui-sref="goals.other">Other</a></li>
+		<li ng-class="{active: $state.params.selector === 'all'}"><a href="#/goals/all">All</a></li>
+		<li ng-class="{active: $state.params.selector === 'physical'}"><a href="#/goals/physical">Physical</a></li>
+		<li ng-class="{active: $state.params.selector === 'spiritual'}"><a href="#/goals/spiritual">Spiritual</a></li>
+		<li ng-class="{active: $state.params.selector === 'professional'}"><a href="#/goals/professional">Professional</a></li>
+		<li ng-class="{active: $state.params.selector === 'financial'}"><a href="#/goals/financial">Financial</a></li>
+		<li ng-class="{active: $state.params.selector === 'other'}"><a href="#/goals/other">Other</a></li>
 		<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			<a class="dropdown-toggle" data-toggle="dropdown">
 				Sort <span class="caret"></span>
 			</a>
 			<ul class="dropdown-menu">
@@ -21,8 +21,23 @@
 				<li class=""><a>Danger</a></li>
 			</ul>
 		</li>
+		<form class="navbar-form navbar-left">
+			<input type="text" class="form-control col-lg-8" placeholder="Search">
+		</form>
 	</ul>
-	<div id="myTabContent" class="tab-content" ui-view>
 
+	<div id="myTabContent" class="tab-content">
+		<div class="well">
+			<ul class="nav nav-pills">
+				<li><span class="label label-primary">My Goal</span></li>
+				<li><span class="label label-primary">My Plan</span></li>
+				<li><span class="label label-primary">My Progress</span></li>
+				<li><span class="label label-primary">My Reward</span></li>
+			</ul>
+			<h3>45%</h3>
+			<div class="progress progress-striped active">
+				<div class="progress-bar" style="width: 45%"></div>
+			</div>
+		</div>
 	</div>
 </div>
