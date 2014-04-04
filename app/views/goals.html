@@ -1,40 +1,28 @@
-<div class="jumbotron">
-	<div class="navbar navbar-inverse">
-		<ul class="nav navbar-nav">
-			<li ><a href="#">All</a></li>
-			<li><a href="#">Physical</a></li>
-			<li><a href="#">Spiritual</a></li>
-			<li class="active"><a href="#">Professional</a></li>
-			<li><a href="#">Financial</a></li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Name</a></li>
-					<li><a href="#">Creation Date</a></li>
-					<li><a href="#">Due Date</a></li>
-					<li class="divider"></li>
-					<li><a href="#">Complete</a></li>
-					<li><a href="#">Incomplete</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h3 class="panel-title">Create New Presentation Platform</h3>
-		</div>
-		<div class="panel-body">
-			<h4>Due June 4 2014</h4>
-			<h5>Create a new template for sales representatives to create presentations from.</h5>
-		</div>
-		<div class="panel-footer">
-			<p>45%</p>
+<div class="container">
+	<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+		<li class=""><a ui-sref="goals.all">All</a></li>
+		<li class=""><a ui-sref="goals.physical">Physical</a></li>
+		<li><a ui-sref="goals.spiritual">Spiritual</a></li>
+		<li><a ui-sref="goals.professional">Professional</a></li>
+		<li><a ui-sref="goals.financial">Financial</a></li>
+		<li><a ui-sref="goals.other">Other</a></li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				Sort <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li class=""><a>Name</a></li>
+				<li class=""><a>Creation Date</a></li>
+				<li class=""><a>Due Date</a></li>
+				<li class="divider"></li>
+				<li class="dropdown-header">Progress</li>
+				<li class=""><a>On-Track</a></li>
+				<li class=""><a>Warning</a></li>
+				<li class=""><a>Danger</a></li>
+			</ul>
+		</li>
+	</ul>
+	<div id="myTabContent" class="tab-content" ui-view>
 
-			<div class="progress progress-striped active">
-				<div class="progress-bar" style="width: 45%"></div>
-			</div>
-		</div>
 	</div>
 </div>
