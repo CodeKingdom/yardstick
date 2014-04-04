@@ -1,11 +1,11 @@
 <div class="container">
 	<ul class="nav nav-tabs" style="margin-bottom: 15px;">
-		<li class=""><a ui-sref="goals.all">All</a></li>
-		<li class=""><a ui-sref="goals.physical">Physical</a></li>
-		<li><a ui-sref="goals.spiritual">Spiritual</a></li>
-		<li><a ui-sref="goals.professional">Professional</a></li>
-		<li><a ui-sref="goals.financial">Financial</a></li>
-		<li><a ui-sref="goals.other">Other</a></li>
+		<li ng-class="{active: $state.includes('goals.all')}"><a ui-sref="goals.all">All</a></li>
+		<li ng-class="{active: $state.includes('goals.physical')}"><a ui-sref="goals.physical">Physical</a></li>
+		<li ng-class="{active: $state.includes('goals.spiritual')}"><a ui-sref="goals.spiritual">Spiritual</a></li>
+		<li ng-class="{active: $state.includes('goals.professional')}"><a ui-sref="goals.professional">Professional</a></li>
+		<li ng-class="{active: $state.includes('goals.financial')}"><a ui-sref="goals.financial">Financial</a></li>
+		<li ng-class="{active: $state.includes('goals.other')}"><a ui-sref="goals.other">Other</a></li>
 		<li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 				Sort <span class="caret"></span>
