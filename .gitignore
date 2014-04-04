@@ -1,3 +1,14 @@
+/.DS_Store
+/.idea/.name
+/.idea/encodings.xml
+/.idea/jsLibraryMappings.xml
+/.idea/libraries/yardstick_node_modules.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/scopes/scope_settings.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
+/.idea/yardstick.iml
 node_modules
 dist
 .tmp
