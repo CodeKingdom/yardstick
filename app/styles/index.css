@@ -6,12 +6,22 @@
 }
 .uv{
 	float: left;
+	width: 80%;
+	height: 600px;
+	overflow: auto;
 }
 .top-bar{
 	float: left;
 	height: 100px;
 	width: 80%;
+	margin-top: 50px;
 }
+	.top-bar .row i{
+		float: left;
+	}
+	.top-bar .row h4{
+		float: right;
+	}
 
 .sidebar-menu li{
 	list-style-type: none;
