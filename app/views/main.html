@@ -1,27 +1,65 @@
-<div class="header">
-	<ul class="nav nav-pills pull-right">
-		<li class="active"><a ng-href="#">Home</a></li>
-		<li><a ng-href="#">About</a></li>
-		<li><a ng-href="#">Contact</a></li>
-	</ul>
-</div>
-
 <div class="jumbotron">
-	<h1>'Allo, 'Allo!</h1>
-	<p class="lead">
-		<img src="images/yeoman.png" alt="I'm Yeoman"><br>
-		Always a pleasure scaffolding your apps.
-	</p>
+	<div class="navbar navbar-inverse">
+		<ul class="nav navbar-nav">
+			<li ><a href="#">All</a></li>
+			<li><a href="#">Physical</a></li>
+			<li><a href="#">Spiritual</a></li>
+			<li class="active"><a href="#">Professional</a></li>
+			<li><a href="#">Financial</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Name</a></li>
+					<li><a href="#">Creation Date</a></li>
+					<li><a href="#">Due Date</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Complete</a></li>
+					<li><a href="#">Incomplete</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">Goal primary</h3>
+		</div>
+		<div class="panel-body">
+			Panel content
+		</div>
+		<div class="panel-footer">
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" style="width: 20%"></div>
+			</div>
+		</div>
+	</div>
 
-	<p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+	<div class="panel panel-warning">
+		<div class="panel-heading">
+			<h3 class="panel-title">Goal warning</h3>
+		</div>
+		<div class="panel-body">
+			Panel content
+		</div>
+		<div class="panel-footer">
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning" style="width: 60%"></div>
+			</div>
+		</div>
+	</div>
 
-	<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-		Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-		Sanctus sea sed takimata ut vero voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-
-		At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum.
-
-		Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-</div>
+	<div class="panel panel-danger">
+		<div class="panel-heading">
+			<h3 class="panel-title">Goal danger</h3>
+		</div>
+		<div class="panel-body">
+			Panel content
+		</div>
+		<div class="panel-footer">
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" style="width: 80%"></div>
+			</div>
+		</div>
+	</div>
+	</div>

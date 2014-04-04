@@ -10,6 +10,10 @@
 	height: 600px;
 	overflow: auto;
 }
+.navbar-nav > li {
+	margin-right: 15px;
+}
+
 .top-bar{
 	float: left;
 	height: 100px;
