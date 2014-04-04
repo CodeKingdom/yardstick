@@ -30,11 +30,11 @@
 <div class="container">
 	<div class="sidebar">
 		<ul class="sidebar-menu nav nav-pills nav-stacked">
-			<li><a href="#"><i class="fa fa-home fa-fw fa-2x"></i> Home</a></li>
-			<li><a href="#"><i class="fa fa-check-square-o fa-fw fa-2x"></i> My Goals</a></li>
-			<li><a href="#"><i class="fa fa-comments fa-fw fa-2x"></i> My Friends</a></li>
-			<li><a href="#"><i class="fa fa-bullhorn fa-fw fa-2x"></i> My Surveys</a></li>
-			<li><a href="#"><i class="fa fa-gears fa-fw fa-2x"></i> My Account</a></li>
+			<li ng-class="{active: $state.includes('home')}"><a ui-sref="home"><i class="fa fa-home fa-fw fa-2x"></i> Home</a></li>
+			<li ng-class="{active: $state.includes('goals')}"><a ui-sref="goals"><i class="fa fa-check-square-o fa-fw fa-2x"></i> My Goals</a></li>
+			<li ng-class="{active: $state.includes('friends')}"><a ui-sref="friends"><i class="fa fa-comments fa-fw fa-2x"></i> My Friends</a></li>
+			<li ng-class="{active: $state.includes('surveys')}"><a ui-sref="surveys"><i class="fa fa-bullhorn fa-fw fa-2x"></i> My Surveys</a></li>
+			<li ng-class="{active: $state.includes('account')}"><a ui-sref="account"><i class="fa fa-gears fa-fw fa-2x"></i> My Account</a></li>
 
 		</ul>
 	</div>
@@ -71,10 +71,12 @@
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
 <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/modules/yardstickApp.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <!-- endbuild -->

@@ -22,6 +22,7 @@
 }
 	.top-bar .row i{
 		float: left;
+		margin-left: 20px;
 	}
 	.top-bar .row h4{
 		float: right;
