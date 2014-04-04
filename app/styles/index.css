@@ -1,0 +1,22 @@
+.sidebar{
+	float: left;
+	height: 100%;
+	width: 20%;
+	padding-top: 100px;
+}
+.uv{
+	float: left;
+}
+.top-bar{
+	float: left;
+	height: 100px;
+	width: 80%;
+}
+
+.sidebar-menu li{
+	list-style-type: none;
+}
+
+.sidebar-menu{
+	padding-left: 0;
+}
