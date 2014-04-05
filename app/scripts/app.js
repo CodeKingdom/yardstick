@@ -24,6 +24,7 @@ angular.module('yardstickApp')
 		})
 		.state('goals', {
 			url: "/goals/:selector",
-			templateUrl: "../views/goals.html"
+			templateUrl: "../views/goals.html",
+			controller: "GoalCtrl"
 		})
 });

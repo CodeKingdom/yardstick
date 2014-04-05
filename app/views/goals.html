@@ -1,42 +1,28 @@
 <div>
 	<ul class="nav nav-tabs" style="margin-bottom: 15px;">
-		<li ng-class="{active: $state.params.selector === 'all'}"><a href="#/goals/all">All</a></li>
+		<li ng-class="{active: $state.params.selector === ''}"><a href="#/goals/">All</a></li>
 		<li ng-class="{active: $state.params.selector === 'physical'}"><a href="#/goals/physical">Physical</a></li>
 		<li ng-class="{active: $state.params.selector === 'spiritual'}"><a href="#/goals/spiritual">Spiritual</a></li>
 		<li ng-class="{active: $state.params.selector === 'professional'}"><a href="#/goals/professional">Professional</a></li>
 		<li ng-class="{active: $state.params.selector === 'financial'}"><a href="#/goals/financial">Financial</a></li>
 		<li ng-class="{active: $state.params.selector === 'other'}"><a href="#/goals/other">Other</a></li>
-		<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown">
-				Sort <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu">
-				<li class=""><a>Name</a></li>
-				<li class=""><a>Creation Date</a></li>
-				<li class=""><a>Due Date</a></li>
-				<li class="divider"></li>
-				<li class="dropdown-header">Progress</li>
-				<li class=""><a>On-Track</a></li>
-				<li class=""><a>Warning</a></li>
-				<li class=""><a>Danger</a></li>
-			</ul>
+		<li>
+			<form class="navbar-form navbar-left">
+				<input type="text" class="form-control col-lg-8" id="query-search" placeholder="Search" ng-model="query">
+			</form>
 		</li>
-		<form class="navbar-form navbar-left">
-			<input type="text" class="form-control col-lg-8" placeholder="Search">
-		</form>
 	</ul>
 
 	<div id="myTabContent" class="tab-content">
-		<div class="well">
-			<ul class="nav nav-pills">
-				<li><span class="label label-primary">My Goal</span></li>
-				<li><span class="label label-primary">My Plan</span></li>
-				<li><span class="label label-primary">My Progress</span></li>
-				<li><span class="label label-primary">My Reward</span></li>
-			</ul>
-			<h3>45%</h3>
-			<div class="progress progress-striped active">
-				<div class="progress-bar" style="width: 45%"></div>
+		<div class="panel panel-primary" ng-repeat="goal in goals | filter:query | filter:{type:goalType} | orderBy:orderProp">
+			<div class="panel-heading">
+				<h2 class="panel-title">{{goal.name}}</h2>
+			</div>
+			<div class="panel-body">
+				<h2>{{goal.percentageComplete}}%</h2>
+				<div class="progress progress-striped active">
+					<div class="progress-bar" style="width: {{goal.percentageComplete}}%"></div>
+				</div>
 			</div>
 		</div>
 	</div>
